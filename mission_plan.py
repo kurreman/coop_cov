@@ -7,7 +7,7 @@
 import numpy as np
 import dubins
 
-from toolbox import geometry as geom
+from toolbox import geometry as geom #This is the custom toolbox package found at this repo https://github.com/KKalem/toolbox. Don't forget to add it to your python path by adding this to your .bashrc: export PYTHONPATH="${PYTHONPATH}:/path/to/toolbox"
 
 import matplotlib.patches as pltpatches
 
