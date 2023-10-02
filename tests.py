@@ -26,10 +26,10 @@ def generate_waypoints_for_multiple_auvs(num_agents, swath, rect_width, rect_hei
 
 if __name__ == '__main__':
     # Example configuration
-    num_agents = 3
+    num_agents = 6
     swath = 50
-    rect_width = 200
-    rect_height = 200
+    rect_width = 500
+    rect_height = 1000
     speed = 1.5
     straight_slack = 1
     overlap_between_rows = 0
@@ -39,7 +39,22 @@ if __name__ == '__main__':
     center_y = False
     exiting_line = False
 
-    timed_paths_list = generate_waypoints_for_multiple_auvs(
+    # timed_paths_list = generate_waypoints_for_multiple_auvs(
+    #     num_agents=num_agents,
+    #     swath=swath,
+    #     rect_width=rect_width,
+    #     rect_height=rect_height,
+    #     speed=speed,
+    #     straight_slack=straight_slack,
+    #     overlap_between_rows=overlap_between_rows,
+    #     overlap_between_lanes=overlap_between_lanes,
+    #     double_sided=double_sided,
+    #     center_x=center_x,
+    #     center_y=center_y,
+    #     exiting_line=exiting_line
+    # )
+
+    timed_paths_list = plan_simple_lawnmower(
         num_agents=num_agents,
         swath=swath,
         rect_width=rect_width,
