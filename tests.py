@@ -30,14 +30,16 @@ if __name__ == '__main__':
     swath = 50
     rect_width = 500
     rect_height = 1000
-    speed = 1.5
+    
+    speed = 1
     straight_slack = 1
     overlap_between_rows = 0
     overlap_between_lanes = 0
     double_sided = False
+
     center_x = False
     center_y = False
-    exiting_line = False
+    exiting_line = True #Nice end formation
 
     # timed_paths_list = generate_waypoints_for_multiple_auvs(
     #     num_agents=num_agents,
