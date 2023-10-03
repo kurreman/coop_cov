@@ -223,7 +223,7 @@ def plan_simple_lawnmower(num_agents,
     mins = np.min(paths, axis=1)
     minx, miny = np.min(mins, axis=0)
     # but also move the miny half a swath up for coverage
-    miny -= swath/2
+    # miny -= swath/2
 
     for i in range(len(paths)):
         paths[i][:,0] -= minx
