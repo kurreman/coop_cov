@@ -79,3 +79,4 @@ if __name__ == '__main__':
         timed_paths.visualize(ax, wp_labels=False, circles=True, alpha=0.1, c='k')
 
     plt.show()
+    
